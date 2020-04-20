@@ -10,7 +10,7 @@ http-response ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice)
 http-request ^https?:\/\/musicpay\.kuwo.cn\/music\.pay\?uid=\d+ script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/KuWoMusicDownload.js
 
 # 彩云天气 VIP
-彩云天气 = requires-body=1,max-size=0,script-path=JS/caiyun.js,type=http-response,pattern=https://biz.caiyunapp.com/v2/user\?app_name=weather
+http-response https://biz.caiyunapp.com/v2/user\?app_name=weather requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/surge/master/Script/caiyun.js
 
 # Netflix 评分
 http-request ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js

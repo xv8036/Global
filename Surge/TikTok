@@ -13,4 +13,4 @@
 抖音 & TikTok去广告&水印 = type=http-request,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
 抖音 & TikTok去广告&水印 = type=http-response,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
 
-hostname = %APPEND% 
+hostname = %APPEND% *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, *.amemv.com

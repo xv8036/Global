@@ -5,8 +5,8 @@
 
 # TikTok 解锁地区
 (?<=_region=)CN(?=&) JP 307
-(?<=&app_version=)16..(?=.?.?&) 1 307
-(?<=\?version_code=)16..(?=.?.?&) 1 307
+(?<=&app_version=)15..(?=.?.?&) 1 307
+(?<=\?version_code=)15..(?=.?.?&) 1 307
 
 # TikTok
 ^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302

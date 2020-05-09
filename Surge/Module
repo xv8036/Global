@@ -3,8 +3,8 @@
 
 [URL Rewrite]
 
-
 [Script]
+
 # 酷我音乐 VIP
 http-response ^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js
 http-request ^https?:\/\/musicpay\.kuwo.cn\/music\.pay\?uid=\d+ script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/KuWoMusicDownload.js
@@ -28,4 +28,5 @@ http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness
 http-response ^https:\/\/vipapi\.jxedt\.com\/vip\/check requires-body=1,max-size=0,script-path=https://github.com/xv8036/Global/raw/master/Javascripts/jxydt.js
 
 [MITM]
+
 hostname = %APPEND% vip1.kuwo.cn, biz.caiyunapp.com, ios.prod.ftl.netflix.com, trade-acs.m.taobao.com, api.m.jd.com, vipapi.jxedt.com

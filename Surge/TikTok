@@ -2,15 +2,16 @@
 #!desc=JavaScript
 
 [URL Rewrite]
-# > TikTok封区解锁
+# > TikTok 解锁地区
 (?<=_region=)CN(?=&) JP 307
 (?<=&app_version=)16..(?=.?.?&) 1 307
 (?<=\?version_code=)16..(?=.?.?&) 1 307
-# > TikTok去水印
+
+# > TikTok
 ^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302
 
 [Script]
-# > 抖音 去广告、水印
+# > Adblock
 http-request ^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post) requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
 http-response ^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post) requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
 

@@ -1,5 +1,6 @@
 #!name=TikTok
 #!desc=JavaScript
+
 [URL Rewrite]
 # > TikTok封区解锁
 (?<=_region=)CN(?=&) JP 307

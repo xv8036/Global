@@ -13,4 +13,4 @@
 http-request ^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post) requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
 http-response ^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post) requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
 
-hostname = %APPEND% *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, *.amemv.com
+hostname = %INSERT% *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, *.amemv.com

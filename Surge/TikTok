@@ -1,3 +1,5 @@
+#!name=TikTok
+#!desc=JavaScript
 [URL Rewrite]
 # > TikTok封区解锁
 (?<=_region=)CN(?=&) VN 307

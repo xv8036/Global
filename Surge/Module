@@ -3,6 +3,9 @@
 
 [URL Rewrite]
 
+# TikTok
+^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302
+
 [Script]
 
 # 酷我音乐 VIP

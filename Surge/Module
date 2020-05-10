@@ -36,4 +36,4 @@ http-response ^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post) 
 
 [MITM]
 
-hostname = %APPEND% vip1.kuwo.cn, biz.caiyunapp.com, ios.prod.ftl.netflix.com, trade-acs.m.taobao.com, api.m.jd.com, vipapi.jxedt.com
+hostname = %APPEND% vip1.kuwo.cn, biz.caiyunapp.com, ios.prod.ftl.netflix.com, trade-acs.m.taobao.com, api.m.jd.com, vipapi.jxedt.com, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, *.amemv.com

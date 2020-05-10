@@ -27,6 +27,10 @@ http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness
 # 驾校一点通 VIP
 http-response ^https:\/\/vipapi\.jxedt\.com\/vip\/check requires-body=1,max-size=0,script-path=https://github.com/xv8036/Global/raw/master/Javascripts/jxydt.js
 
+# 抖音去广告
+http-request ^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post) requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
+http-response ^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post) requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
+
 [MITM]
 
 hostname = %APPEND% vip1.kuwo.cn, biz.caiyunapp.com, ios.prod.ftl.netflix.com, trade-acs.m.taobao.com, api.m.jd.com, vipapi.jxedt.com

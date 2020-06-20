@@ -35,8 +35,7 @@ http-request ^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post) r
 http-response ^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post) requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
 
 # pear VIP
-
-http-request ^https:\/\/(www\.baidu.com2\.club|ayk\.tmdidi\.com|m\.pearkin\.com|souhu\.mett\.me|bkcd\.b-cdn\.net)\/(api\/movie\/WatchMovie|api\/Account\/CheckVip|api\/account\/IndexDetail) requires-body=1,max-size=0,script-path=https://github.com/xv8036/Global/raw/master/Javascripts/Pear.js
+http-response ^https:\/\/(www\.baidu.com2\.club|ayk\.tmdidi\.com|m\.pearkin\.com|souhu\.mett\.me|bkcd\.b-cdn\.net)\/(api\/movie\/WatchMovie|api\/Account\/CheckVip|api\/account\/IndexDetail) requires-body=1,max-size=0,script-path=https://github.com/xv8036/Global/raw/master/Javascripts/Pear.js
 
 [MITM]
 

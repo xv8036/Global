@@ -1,4 +1,3 @@
-
 const chavy = init()
 const cookieName = '苏宁易购'
 const KEY_loginurl = 'chavy_login_url_suning'

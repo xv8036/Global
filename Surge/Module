@@ -29,11 +29,6 @@ http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness
 
 # 驾校一点通 VIP
 http-response ^https:\/\/vipapi\.jxedt\.com\/vip\/check requires-body=1,max-size=0,script-path=https://github.com/xv8036/Global/raw/master/Javascripts/jxydt.js
-
-# 抖音去广告
-http-request ^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post) requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
-http-response ^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post) requires-body=1,max-size=0,script-path=https://choler.github.io/Surge/Script/Aweme.js
-
 # pear VIP
 http-response ^https:\/\/(www\.baidu.com2\.club|ayk\.tmdidi\.com|m\.pearkin\.com|souhu\.mett\.me|bkcd\.b-cdn\.net)\/(api\/movie\/WatchMovie|api\/Account\/CheckVip|api\/account\/IndexDetail) requires-body=1,max-size=0,script-path=https://github.com/xv8036/Global/raw/master/Javascripts/Pear.js
 

@@ -25,6 +25,9 @@ http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness
 http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 
+# YouTube 去广告
+http-request ^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/YouTube.js
+
 [MITM]
 
-hostname = %APPEND% vip1.kuwo.cn, vipapi.jxedt.com, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, *.amemv.com, m.pearkin.com, trade-acs.m.taobao.com, api.m.jd.com
+hostname = %APPEND% *.googlevideo.com, vip1.kuwo.cn, vipapi.jxedt.com, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, *.amemv.com, m.pearkin.com, trade-acs.m.taobao.com, api.m.jd.com

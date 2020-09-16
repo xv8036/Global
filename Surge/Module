@@ -18,6 +18,13 @@ http-response ^https:\/\/vipapi\.jxedt\.com\/vip\/check requires-body=1,max-size
 # pear VIP
 http-response ^https:\/\/(www\.baidu.com2\.club|ayk\.tmdidi\.com|m\.pearkin\.com|souhu\.mett\.me|bkcd\.b-cdn\.net)\/(api\/movie\/WatchMovie|api\/Account\/CheckVip|api\/account\/IndexDetail) requires-body=1,max-size=0,script-path=https://github.com/xv8036/Global/raw/master/Javascripts/Pear.js
 
+# 京东历史价格
+http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
+
+# 淘宝历史价格
+http-request ^http://.+/amdc/mobileDispatch requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+
 [MITM]
 
-hostname = %APPEND% vip1.kuwo.cn, vipapi.jxedt.com, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, *.amemv.com, m.pearkin.com
+hostname = %APPEND% vip1.kuwo.cn, vipapi.jxedt.com, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, *.amemv.com, m.pearkin.com, trade-acs.m.taobao.com, api.m.jd.com

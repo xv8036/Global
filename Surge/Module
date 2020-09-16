@@ -30,4 +30,4 @@ http-request ^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) script-path=https
 
 # Bahamut 去广告
 [MITM]
-hostname = %APPEND% *.googlevideo.com, vip1.kuwo.cn, vipapi.jxedt.com, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, *.amemv.com, m.pearkin.com, trade-acs.m.taobao.com, api.m.jd.com, 
+hostname = %APPEND% *.googlevideo.com, vip1.kuwo.cn, vipapi.jxedt.com, *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com, *.amemv.com, m.pearkin.com, trade-acs.m.taobao.com, api.m.jd.com, api.gamer.com.tw

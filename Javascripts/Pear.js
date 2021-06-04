@@ -29,7 +29,7 @@ if (url.indexOf(checkvip) != -1) {
 	body = JSON.stringify(obj);
  }
 if (url.indexOf(vipinfo) != -1) {
-	obj["nickName"] = "好心人";
+	obj["nickName"] = "给我撸她";
    obj["vipLevel"] = "101";
    obj["vipEndTime"] = "2222-02-22";
    obj["cartoonVip"] = "true";
